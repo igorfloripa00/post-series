@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Consultar series</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/get.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Lista de séries</h1>
+            <p>Prática com método GET: buscar e exibir as séries da API do codeverse</p>
+        </header>
+       <main>
+    <a href="pages/cadastro.html">Ir para o cadastro</a>
+    <section id="container-titulo-lista">
+        <h2 id="titulo-lista">Series cadastrados</h2>
+        <p>As series são carregadas automaticamente ao iniciar a página.</p>
+        <p id="resposta"></p>
+        <ul id="lista-series"></ul>
+    </section>
+</main>
+
+
+<template id="modelo-serie">
+  <div class="card-serie">
+    
+    <img src="" alt="" class="imagem-serie"> 
+    
+    <h3 class="nome"></h3>
+    <p class="Gênero"></p>
+    <p class="ano"></p>
+    <p class="diretor"></p>
+  </div>
+</template>
+
+<div id="lista-series"></div>
+<p id="resposta"></p>
